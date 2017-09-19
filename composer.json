@@ -1,0 +1,20 @@
+{
+    "name": "Synonym's parser",
+    "description": "Tool for parse synonyms from site wordreference.com",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Timurka Nick",
+            "email": "timurka.nick@gmail.com"
+        }
+    ],
+    "require": {
+        "sunra/php-simple-html-dom-parser": "1.5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    }
+}
