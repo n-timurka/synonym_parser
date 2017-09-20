@@ -1,12 +1,12 @@
 {
     "site_url": "http://www.wordreference.com/synonyms/",
     "synonyms_file_url": "https://raw.githubusercontent.com/dwyl/english-words/master/words.txt",
-    "result_tag": ".content div#article",
+    "result_tag": "#article",
     "result_filepath": "files/",
-    "db": [
+    "db_chunk_size": 100,
+    "db":
         {
             "name": "synonyms",
             "collection": "result"
         }
-    ]
 }

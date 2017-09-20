@@ -10,11 +10,12 @@
         }
     ],
     "require": {
-        "sunra/php-simple-html-dom-parser": "1.5.2"
+        "sunra/php-simple-html-dom-parser": "1.5.2",
+        "mongodb/mongodb": "^1.1"
     },
     "autoload": {
         "psr-4": {
-            "Src\\": "src/"
+            "Src\\": ["src/"]
         }
     }
 }

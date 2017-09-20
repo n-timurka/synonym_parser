@@ -18,20 +18,17 @@ class Db {
      * 
      */
     public function __construct($db) {
-        $this->collection = (new MongoDB\Client)->{$db['name']}->{$db['collection']};
+        $this->collection = (new \MongoDB\Client)->{$db->name}->{$db->collection};
     }
 
     /**
-     * Save data to DB
+     * Insert items to DB
      * 
-     * @param string $key
-     * @param string $value
+     * @param array $items
+     * @return array
      */
-    public function save($key, $value) {
-        return $this->collection->insertOne([
-            'key' => $key,
-            'text' => $value,
-        ]);
+    public function save($items) {
+        return $this->collection->insertMany($items);
     }
 
 }
